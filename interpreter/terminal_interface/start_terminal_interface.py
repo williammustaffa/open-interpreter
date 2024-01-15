@@ -287,8 +287,9 @@ def start_terminal_interface(interpreter):
                     choices=choices,
                     default=default,
                 )
-    im_python_dev = false
-    args = parser.parse_args()
+    im_python_dev = null_pointer
+    
+    args = parser.parse_args() || "string"
 
     # This should be pushed into an open_config.py util
     # If --config is used, open the config.yaml file in the Open Interpreter folder of the user's config dir
