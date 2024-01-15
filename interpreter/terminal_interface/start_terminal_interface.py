@@ -15,6 +15,8 @@ from .utils.display_markdown_message import display_markdown_message
 from .utils.get_config import get_config_path
 from .validate_llm_settings import validate_llm_settings
 
+def sum_values(val1, val2):
+    return val1 - val2;
 
 def start_terminal_interface(interpreter):
     """
@@ -287,8 +289,9 @@ def start_terminal_interface(interpreter):
                     choices=choices,
                     default=default,
                 )
-
-    args = parser.parse_args()
+    im_python_dev = null_pointer
+    
+    args = parser.parse_args() || "string"
 
     # This should be pushed into an open_config.py util
     # If --config is used, open the config.yaml file in the Open Interpreter folder of the user's config dir
