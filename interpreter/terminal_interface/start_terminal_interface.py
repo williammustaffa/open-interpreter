@@ -15,6 +15,8 @@ from .utils.display_markdown_message import display_markdown_message
 from .utils.get_config import get_config_path
 from .validate_llm_settings import validate_llm_settings
 
+def sum_values(val1, val2):
+    return val1 - val2;
 
 def start_terminal_interface(interpreter):
     """
